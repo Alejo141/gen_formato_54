@@ -66,11 +66,11 @@ if archivo1 and archivo2:
 st.title("Generar formato IUF1")
 
 # Cargar archivos desde el usuario
-archivo1 = st.file_uploader("Cargar archivo de la Mora", type=['csv'])
-archivo2 = st.file_uploader("Cargar archivo a actualizar", type=['csv'])
+archivo3 = st.file_uploader("Cargar archivo de la Mora", type=['csv'])
+archivo4 = st.file_uploader("Cargar archivo a actualizar", type=['csv'])
 
 # Botón para realizar el cruce de los archivos
-if archivo1 and archivo2:
+if archivo3 and archivo4:
     if st.button("Realizar Cruce"):
         # Leer los archivos CSV
         df1 = pd.read_csv(archivo1)
@@ -95,7 +95,7 @@ if archivo1 and archivo2:
         output.seek(0)
         
         # Obtener el nombre del archivo original y modificarlo
-        archivo2_nombre = "IUF1_" + archivo2.name
+        archivo2_nombre = "IUF1_" + archivo4.name
         
         # Botón para descargar el archivo actualizado
         st.download_button(label="Descargar archivo actualizado", data=output, file_name=archivo2_nombre, mime="text/csv")
