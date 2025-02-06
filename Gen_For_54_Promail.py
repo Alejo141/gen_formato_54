@@ -66,8 +66,8 @@ if archivo1 and archivo2:
 st.title("Generar formato IUF1")
 
 # Cargar archivos desde el usuario
-archivo3 = st.file_uploader("Cargar archivo de la Mora", type=['csv'])
-archivo4 = st.file_uploader("Cargar archivo a actualizar", type=['csv'])
+archivo3 = st.file_uploader("Cargar archivo de la Mora", type=['csv'], key="key_archivo3")
+archivo4 = st.file_uploader("Cargar archivo a actualizar", type=['csv'], key="key_archivo4")
 
 # Botón para realizar el cruce de los archivos
 if archivo3 and archivo4:
