@@ -62,7 +62,7 @@ if archivo1 and archivo2:
             st.error(f"Error en el procesamiento de los archivos: {e}")
 
 #############################################################################################################
-
+"""
 st.title("Generar formato IUF1")
 
 # Cargar archivos desde el usuario
@@ -100,4 +100,4 @@ if archivo3 and archivo4:
         # Botón para descargar el archivo actualizado
         st.download_button(label="Descargar archivo actualizado", data=output, file_name=archivo2_nombre, mime="text/csv")
         
-        st.success("Actualización completada.")
+        st.success("Actualización completada.") """
